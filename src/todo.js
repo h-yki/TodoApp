@@ -93,5 +93,3 @@ export default class Todo extends Component {
         );
     }
 }
-
-//commit test Can you visible me?
