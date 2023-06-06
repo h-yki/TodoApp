@@ -7,7 +7,7 @@ export default class Todo extends Component {
             todos:[],
             finished:[],
             name:'',
-            count:0
+            count: 0
         };
     }
 
@@ -24,7 +24,7 @@ export default class Todo extends Component {
         if(name.length > 0){
             this.setState({
                 todos: [...todos, name],
-                name: ''
+                name: '',
             });
             document.elem.reset();
         }
@@ -42,7 +42,7 @@ export default class Todo extends Component {
     removefinish = (index) =>{
         const {finished} = this.state;
         this.setState({
-            finished: [...finished.slice(0, index), ...finished.slice(index+1)]
+            finished: [...finished.slice(0, index), ...finished.slice(index+1)],
         });
     }
 
@@ -80,11 +80,11 @@ export default class Todo extends Component {
                 <div className='currenttask-container'>
                     <h4 className='currenttask'>現在のタスク</h4>
                     <ul id='currentTask'>
-                        {todos.map((todo, index) => 
+                        {todos.map((todo,index) => 
                          <li key ={index} className='currenttodo'>
                             {todo}
                          <button className='finish' onClick={() => {this.removeTodo(index)}}>完了</button>
-                        </li>
+                         </li>
                         )}
                     </ul>
                 </div>
