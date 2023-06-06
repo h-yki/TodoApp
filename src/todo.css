@@ -1,0 +1,74 @@
+.headtitle{
+    color: #000000;
+    text-align: center;
+}
+
+.inputelem{
+    text-align: center;
+}
+
+.input{
+    width: 200px;
+    text-align: center;
+}
+
+.currenttask{
+    color: #ffffff;
+    background-color: gray;
+    padding: 10px;
+    text-align: center;
+}
+
+.currenttodo{
+    color: #000000;
+}
+
+.finishedtask{
+    color: #ffffff;
+    background-color: grey;
+    padding: 10px;
+    text-align: center;
+}
+
+.body-container{
+    display: flex;
+}
+
+.currenttask-container,
+.finishedtask-container{
+    flex: 1;
+    padding: 10px;
+}
+
+.delete{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.count{
+    text-align: right;
+}
+
+.finish{
+    margin-left: 10px;
+}
+
+body{
+    /* background-color: #eedcb3; */
+    background-color: #ffffff;
+}
+
+footer {
+    width: 100%;
+    height: 70px; 
+    text-align: center;
+    padding: 50px 0;
+    background-color: gray;
+    position: absolute;
+    bottom: 0;
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+}
